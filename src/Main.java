@@ -6,7 +6,7 @@ public class Main {
             //used for the user to determine size of the stack
             int max = 4;
             //created new object for the design by contract class
-            MyStackDC2 myStackDC2 = new MyStackDC2();
+            MyStackDC2 myStackDC = new MyStackDC2();
 
             //start while loop to do automate stacks
             for(int i = 0; i<max; i++)
@@ -14,26 +14,26 @@ public class Main {
                     //if statements for the main to determine whether the user wants to
                     // pop or push the stack
                     //for the user to check if the stack is not full
-                    if (!myStackDC2.isFull(max)) {
+                    if (!myStackDC.isFull(max)) {
                         //stack will be able to push
                         //push this stack
-                        myStackDC2.push(1);
-                        myStackDC2.push(2);
+                        myStackDC.push(1);
+                        myStackDC.push(2);
                         //System.out.println("the stack has pushed");
                         // -----------------------------------------------
                         //for the user to check if the stack is not empty
-                    } else if (!myStackDC2.isEmpty()) {
+                    } else if (!myStackDC.isEmpty()) {
                         //stack will be able to pop
-                        System.out.println(myStackDC2.peek());
-                        myStackDC2.pop();
+                        System.out.println(myStackDC.peek());
+                        myStackDC.pop();
                         // -----------------------------------------------
                         //for the user to check if the stack is full
-                    } else if (myStackDC2.isFull(max)) {
+                    } else if (myStackDC.isFull(max)) {
                         //stack will not be able to push
                         System.out.println("the stack is full");
                         // -----------------------------------------------
                         //for the user to check if the stack is empty
-                    } else if (myStackDC2.isEmpty()) {
+                    } else if (myStackDC.isEmpty()) {
                         //stack will not be able to pop
                         System.out.println("The stack is empty");
                     }//end last if else statement
