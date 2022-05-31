@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         //testing intellij ide
-        System.out.println("Hello world!" );
+        System.out.println("Hello world!");
         int test = 1;
         int test2 =2;
         int test3 = test + test2;
@@ -19,7 +19,6 @@ public class Main {
 
         //testing colors
         for(int i =0; 10 >= i ; i++){
-
             if(i==5) {
                 System.out.println("blue brackets ");
                 System.out.println(".");
@@ -36,10 +35,7 @@ public class Main {
                             System.out.println("loop again green brackets");
                             i++;
                         }
-
-
                     }
-
                 }
             }
         }
