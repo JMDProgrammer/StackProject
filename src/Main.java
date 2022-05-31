@@ -2,13 +2,15 @@ public class Main {
     public static void main(String[] args) {
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------START MAIN FOR DESIGN BY CONTRACT-----------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
             //used for the user to determine size of the stack
             int max = 4;
             //created new object for the design by contract class
             MyStackDC2 myStackDC = new MyStackDC2();
 
-            //start while loop to do automate stacks
+            //start while loop to do automate stacks for user
             for(int i = 0; i<max; i++)
                 {
                     //if statements for the main to determine whether the user wants to
@@ -17,7 +19,7 @@ public class Main {
                     if (!myStackDC.isFull(max)) {
                         //stack will be able to push
                         //push this stack
-                        myStackDC.push(1);
+                        myStackDC.push(i);
                         myStackDC.push(2);
                         //System.out.println("the stack has pushed");
                         // -----------------------------------------------
@@ -38,9 +40,17 @@ public class Main {
                         System.out.println("The stack is empty");
                     }//end last if else statement
                 }//end for loop
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------END MAIN FOR DESIGN BY CONTRACT-----------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------START MAIN FOR DESIGN BY DEFENSE-----------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
     /*
         MyStackDD stackDD = new MyStackDD();
@@ -53,6 +63,13 @@ public class Main {
         stackDD.push(5);
       */
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------END MAIN FOR DESIGN BY DEFENSE-----------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
-        }
-    }
+
+    
+
+
+        }//end main method
+    }//end main class

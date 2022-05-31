@@ -32,5 +32,4 @@ public class MyStackDC2 {
     public boolean isFull(int max){
        return MyList.size() == max;
     }
-
 }
